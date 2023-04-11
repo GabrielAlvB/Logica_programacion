@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number">
+    <button>Check if you guess the number</button>
+    
+    <script>
+        function aleatorio{
+            return Math.round(Math.random()*10);
+        }
+        
+        //this is an script on html 
+        //var secret = Math.round(Math.random()*10);
+        //this is an array of secrets numbers
+        var secrets = [];
+        //with .push we ca insert values on the array
+        secrets.push(aleatorio());
+        secrets.push(aleatorio());
+        secrets.push(aleatorio());
+        secrets.push(aleatorio());
+        
+
+        var input= document.querySelector("input");
+        //using queryselector we can access to the info of the forms
+
+        
+        function checking(){
+
+            var founded=false;
+            //using .lenght to ensure to read all the vector and optimization
+            for(var posicion=0; posicion< secrets.length; posicion++){
+
+                if(parseInt(input.value) == secrets[posicion]){
+                alert("You guessed");
+                founded=true;
+                break; //this break make this program more
+                //efficient
+                }
+            }
+            if(founded== false){
+                alert("You are wrong");
+            }
+        
+        //this helps us to errase the number and try it again
+        input.value="";
+        input.focus();
+        }
+        var button =document.querySelector("button");
+        button.onclick=checking;
+        //look, checking is a function but we are not 
+        //using (), because it would ejectute imediatly
+        
+    </script>
+</body>
+</html>
