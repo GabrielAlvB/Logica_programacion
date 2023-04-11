@@ -18,20 +18,37 @@
         function sortearNumeros(cantidad){
             var secrets=[];
             var contador=1;
+
             while(contador<=cantidad){
-                numeroAleatorio= aleatorio();
-                secrets.push(numeroAleatorio);
-                contador++;
+                var numeroAleatorio= aleatorio();
+                var encontrado=false;
+                console.log(numeroAleatorio);
+                //evitando que los numeros se repitan
+               
+                for(var posicion=0; posicion < secrets.length; posicion++){
+                    if(numeroAleatorio == secrets[posicion]){
+                        encontrado=true;
+                        break;
+                    }
+                }
+                if(encontrado==false){
+                    secrets.push(numeroAleatorio);
+                    contador++;
+                }
+
+                
             }
-            return secrets;
+            return secrets
         
         }
         
         //this is an script on html 
         //var secret = Math.round(Math.random()*10);
         //this is an array of secrets numbers
+        //
         var secrets = sortearNumeros(4);
         //with .push we ca insert values on the array
+        //
         console.log(secrets);
         
 
