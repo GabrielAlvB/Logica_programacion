@@ -20,16 +20,23 @@
         var input= document.querySelector("input");
         //using queryselector we can access to the info of the forms
 
+        
         function checking(){
+
+            var founded=false;
 
             for(var posicion=0; posicion<4; posicion++){
 
                 if(parseInt(input.value) == secrets[posicion]){
                 alert("You guessed");
+                founded=true;
+                break; //this break make this program more
+                //efficient
                 }
             }
-            alert("You are wrong");
-         
+            if(founded== false){
+                alert("You are wrong");
+            }
         
         //this helps us to errase the number and try it again
         input.value="";
