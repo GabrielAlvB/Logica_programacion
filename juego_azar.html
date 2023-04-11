@@ -21,12 +21,18 @@
         //using queryselector we can access to the info of the forms
 
         function checking(){
-            if(parseInt(input.value) == secret1){
+
+            for(var posicion=0; posicion< 4; posicion++){
+
+                if(parseInt(input.value) == secrets[posicion]){
                 alert("You guessed");
-            }
-            else{
+                }
+                else{
                 alert("You are wrong")
+                }
+
             }
+
 
             
         
