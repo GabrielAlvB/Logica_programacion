@@ -14,7 +14,7 @@
         //this is an script on html 
         //var secret = Math.round(Math.random()*10);
         //this is an array of secrets numbers
-        var secrets = [3,5,7,9];
+        var secrets = [3,5,7,9,11,15];
         
         
         var input= document.querySelector("input");
@@ -24,8 +24,8 @@
         function checking(){
 
             var founded=false;
-
-            for(var posicion=0; posicion<4; posicion++){
+            //using .lenght to ensure to read all the vector and optimization
+            for(var posicion=0; posicion< secrets.length; posicion++){
 
                 if(parseInt(input.value) == secrets[posicion]){
                 alert("You guessed");
