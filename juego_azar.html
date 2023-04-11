@@ -22,22 +22,17 @@
 
         function checking(){
 
-            for(var posicion=0; posicion< 4; posicion++){
+            for(var posicion=0; posicion<4; posicion++){
 
                 if(parseInt(input.value) == secrets[posicion]){
                 alert("You guessed");
                 }
-                else{
-                alert("You are wrong")
-                }
-
             }
-
-
-            
+            alert("You are wrong");
+         
         
         //this helps us to errase the number and try it again
-        input.value=" ";
+        input.value="";
         input.focus();
         }
         var button =document.querySelector("button");
