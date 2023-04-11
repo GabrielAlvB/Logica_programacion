@@ -11,14 +11,26 @@
     <button>Check if you guess the number</button>
     
     <script>
-        function aleatorio{
+        function aleatorio(){
             return Math.round(Math.random()*10);
+        }
+
+        function sortearNumeros(cantidad){
+            var secrets=[];
+            var contador=1;
+            while(contador<=cantidad){
+                numeroAleatorio= aleatorio();
+                secrets.push(numeroAleatorio);
+                contador++;
+            }
+            return secrets;
+        
         }
         
         //this is an script on html 
         //var secret = Math.round(Math.random()*10);
         //this is an array of secrets numbers
-        var secrets = [];
+        var secrets = sortearNumeros(4);
         //with .push we ca insert values on the array
         secrets.push(aleatorio());
         secrets.push(aleatorio());
