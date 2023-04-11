@@ -13,11 +13,8 @@
     <script>
         //this is an script on html 
         //var secret = Math.round(Math.random()*10);
-        
-        var secret1= 3;
-        var secret2= 5;
-        var secret3= 9;
-        var secret4= 7;
+        //this is an array of secrets numbers
+        var secrets = [3,5,7,9];
         
         
         var input= document.querySelector("input");
@@ -31,26 +28,7 @@
                 alert("You are wrong")
             }
 
-            if(parseInt(input.value) == secret2){
-                alert("You guessed");
-            }
-            else{
-                alert("You are wrong")
-            }
-
-            if(parseInt(input.value) == secret3){
-                alert("You guessed");
-            }
-            else{
-                alert("You are wrong")
-            }
-
-            if(parseInt(input.value) == secret4){
-                alert("You guessed");
-            }
-            else{
-                alert("You are wrong")
-            }
+            
         
         //this helps us to errase the number and try it again
         input.value=" ";
