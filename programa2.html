@@ -16,10 +16,22 @@
         pincel.strokeRect(x,y,50,50);
     }
   
-      
-        drawing_square(0,0,"green");
-        drawing_square(0,50,"red");    
-        drawing_square(0,100,"yellow");
+    var x=0;
+    while(x<600){
+        drawing_square(x,0,"red");
+        drawing_square(x,50,"yellow");
+        drawing_square(x,100,"green");
+
+        x=x+50;
+    }
+     /* //this for do the same as the while
+    for(var x=0;x<600;x=x+50){
+        drawing_square(x,0,"red");
+        drawing_square(x,50,"red");
+        drawing_square(x,100,"red");
+    }
+       */ 
+        
 
 
   
