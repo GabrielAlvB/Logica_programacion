@@ -7,8 +7,15 @@
     pincel.fillStyle="grey";
     pincel.fillRect(0,0,600,400);
 
-    function exibirAlert(){
-       alert("You clicked");
+    function exibirAlert(evento){
+        //for this event the coordinates are of the complete screen
+        var x=evento.pageX-pantalla.offsetLeft;
+        var y=evento.pageY-pantalla.offsetTop;
+        
+        //this parameter help us to 
+        // see what is happening
+        console.log(evento);
+       alert(x+","+y);
 
     }
     //cuando es un evento no se usan los parentesis
