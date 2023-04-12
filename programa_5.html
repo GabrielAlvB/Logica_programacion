@@ -19,10 +19,19 @@
     function clearScreen(){
         pincel.clearRect(0,0,600,400)
     }
-    for(var x=20;x<600;x++){
-        
-        disenarCircunferencia(x,20,10);
     
-    }
+    var x=0;
+        function actualizarScreen(){
+            clearScreen();
+            disenarCircunferencia(x,20,10);
+            x++;
+            if(x>=600){
+                x=0;
+            }
+        }
+        setInterval(actualizarScreen,10);
+       // disenarCircunferencia(x,20,10);
+    
+    
     
 </script>
