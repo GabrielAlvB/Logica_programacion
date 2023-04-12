@@ -1,0 +1,26 @@
+<canvas width="600" height="400">
+
+</canvas>
+
+<script>
+
+    //creando funcion para crear cuadrados
+
+    function drawing_square(x,y,color){
+        var pantalla=document.querySelector("canvas");
+        var pincel= pantalla.getContext("2d");
+        
+        pincel.fillStyle=color;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle="black";
+        pincel.strokeRect(x,y,50,50);
+    }
+  
+      
+        drawing_square(0,0,"green");
+        drawing_square(0,50,"red");    
+        drawing_square(0,100,"yellow");
+
+
+  
+</script>
