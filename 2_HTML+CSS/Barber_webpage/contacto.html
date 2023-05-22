@@ -36,6 +36,28 @@
                 <label for="telefono">Telefono</label>
                 <input type="text" id="telefono">
 
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="60" rows="10"></textarea>
+                
+               <div>
+                <p>Cómo le gustaría ser contactado</p>
+                
+                <!--Con name="contacto" agrupamos los radios-->
+               
+                    <label for="radio_email">Email</label>
+                    <input type="radio" value="email" name="contacto" id="radio_email">
+                
+                    <label for="radio_tel">Telefono</label>
+                    <input type="radio" value="Telefono" name="contacto" id="radio_tel">
+                
+                    <label for="radio_whatsapp">WhatsApp</label>
+                    <input type="radio" value="WhatsApp" name="contacto" id="radio_whatsapp">
+                </div>
+                
+                <!--De esta forma, input esta dentro del label y no usamos for?-->
+                <label><input type="checkbox">Le gustaría recibir novedades de la Barbería</label>
+                
+
                 <input type="submit" value="Enviar formulario">
             </form>
         </main>
@@ -46,6 +68,5 @@
           </footer>
           
       </body>
-  
-      
+       
   </html>
