@@ -28,34 +28,33 @@
         <main>
             <form action="">
                 <label for="Nombreapellido">Nombre y apellido</label>
-                <input type="text" id="Nombreapellido">
+                <input type="text" id="Nombreapellido" class="input-padron">
                 
                 <label for="correo">Correo Electronico</label>
-                <input type="text" id="correo">
+                <input type="text" id="correo" class="input-padron">
 
                 <label for="telefono">Telefono</label>
-                <input type="text" id="telefono">
+                <input type="text" id="telefono" class="input-padron">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="" id="mensaje" cols="60" rows="10"></textarea>
+                <textarea name="" id="mensaje" cols="60" rows="10" class="input-padron"></textarea>
                 
                <div>
                 <p>Cómo le gustaría ser contactado</p>
                 
                 <!--Con name="contacto" agrupamos los radios-->
                
-                    <label for="radio_email">Email</label>
-                    <input type="radio" value="email" name="contacto" id="radio_email">
+                    <label for="radio_email"><input type="radio" value="email" name="contacto" id="radio_email">Email</label>
+                    
                 
-                    <label for="radio_tel">Telefono</label>
-                    <input type="radio" value="Telefono" name="contacto" id="radio_tel">
+                    <label for="radio_tel"><input type="radio" value="Telefono" name="contacto" id="radio_tel">Telefono</label>
+                    
                 
-                    <label for="radio_whatsapp">WhatsApp</label>
-                    <input type="radio" value="WhatsApp" name="contacto" id="radio_whatsapp">
-                </div>
+                    <label for="radio_whatsapp"><input type="radio" value="WhatsApp" name="contacto" id="radio_whatsapp">WhatsApp</label>
+              </div>
                 
-                <!--De esta forma, input esta dentro del label y no usamos for?-->
-                <label><input type="checkbox">Le gustaría recibir novedades de la Barbería</label>
+                <!--De esta forma, va a aprecer primero el checkbox y depsues el texto-->
+                <label class="checkbox"><input type="checkbox">Le gustaría recibir novedades de la Barbería</label>
                 
 
                 <input type="submit" value="Enviar formulario">
