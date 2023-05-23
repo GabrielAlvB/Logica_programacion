@@ -148,9 +148,24 @@ p{
     cursor: pointer;
 }
 
+
+
 .enviar:hover{
     background: darkorange;
     transform: scale(1.2); 
     /*rotate(1deg);*/
     
+}
+
+table{
+    margin: 40px;
+}
+thead{
+    background-color: #BBBBBB;
+    color: white;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid black;
+    padding: 8px 15px;
 }
