@@ -1,3 +1,8 @@
+/*Aplying to all bodys of the pages*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     background-color: #BBBBBB;
     padding: 20px;
