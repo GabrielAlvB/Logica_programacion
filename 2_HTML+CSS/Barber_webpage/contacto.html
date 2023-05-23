@@ -28,16 +28,18 @@
         <main>
             <form action="">
                 <label for="Nombreapellido">Nombre y apellido</label>
-                <input type="text" id="Nombreapellido" class="input-padron">
+                <input type="text" id="Nombreapellido" class="input-padron" required>
                 
                 <label for="correo">Correo Electronico</label>
-                <input type="email" id="correo" class="input-padron">
+                <input type="email" id="correo" class="input-padron" required 
+                placeholder="email@dominio.com">
 
                 <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono" class="input-padron">
+                <input type="tel" id="telefono" class="input-padron" required
+                placeholder="(XX) XXXX XXXX">
 
                 <label for="mensaje">Mensaje</label>
-                <textarea name="" id="mensaje" cols="60" rows="10" class="input-padron"></textarea>
+                <textarea name="" id="mensaje" cols="60" rows="10" class="input-padron" required></textarea>
                 
                <div>
                 <!--Knowing identifiers priority in CSS example-->
@@ -51,7 +53,8 @@
                     <label for="radio_tel"><input type="radio" value="Telefono" name="contacto" id="radio_tel">Telefono</label>
                     
                 
-                    <label for="radio_whatsapp"><input type="radio" value="WhatsApp" name="contacto" id="radio_whatsapp">WhatsApp</label>
+                    <label for="radio_whatsapp"><input type="radio" value="WhatsApp" name="contacto" id="radio_whatsapp"
+                        checked>WhatsApp</label>
               </div>
                 <div>
                     <p>En cuál horario prefiere ser atendido</p>
