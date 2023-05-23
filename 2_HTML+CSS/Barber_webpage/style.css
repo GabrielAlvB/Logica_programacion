@@ -118,3 +118,20 @@ form label, form p{
 .checkbox{
     margin: 20px 0px;
 }
+
+/*the priority is (form p)
+etiqueta:
+form=1
+form p =1+1= 2
+p=1
+class=10
+ID=100
+INLINE=1000
+*/
+p{
+    color: red;
+}
+
+form p{
+    color: blue;
+}
