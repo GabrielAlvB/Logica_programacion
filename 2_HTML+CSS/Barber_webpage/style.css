@@ -128,10 +128,11 @@ class=10
 ID=100
 INLINE=1000
 */
+/*
 p{
     color: red;
 }
-
+*/
 form p{
-    color: blue;
+    color: black;
 }
