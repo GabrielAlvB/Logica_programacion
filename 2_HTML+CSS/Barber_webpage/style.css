@@ -179,6 +179,9 @@ td,th{
     text-align: center;
     font-size: 2em; /*2 veces del tamaño de fuente*/
     margin:  0 0 1em;
+    /*with clear the image utensilios left only aplies 
+    until titulo-pincipal*/
+    clear: left;
 }
 
 .principal p{
@@ -192,6 +195,13 @@ td,th{
 
 .principal em{
     font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    /*using float to making the text around de image */
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 .imagenDiferenciales{
