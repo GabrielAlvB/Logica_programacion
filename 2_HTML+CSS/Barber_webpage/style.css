@@ -196,6 +196,20 @@ td,th{
     clear: left;
 }
 
+.titulo-principal::first-letter{
+    font-weight: bold;
+}
+/*
+.titulo-principal::before{
+    content: "["
+}
+.titulo-principal::after{
+    content: "]"
+}
+*/
+p::first-line{
+    font-style: italic;
+}
 .principal p{
     margin: 0 0 1em; /*dejar un espacio de la fuente*/
 
@@ -258,6 +272,10 @@ td,th{
     line-height: 1.5; /*1.5em es parecido*/
 
 }
+.items::before{
+    content:"★"
+}
+
 .items:first-child{
     font-weight: bold;
 }
