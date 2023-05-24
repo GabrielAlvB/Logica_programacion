@@ -194,6 +194,8 @@ td,th{
     /*with clear the image utensilios left only aplies 
     until titulo-pincipal*/
     clear: left;
+    /*rgba is opacity
+    color: rgba(0, 0, 0, 0.3);*/
 }
 
 .titulo-principal::first-letter{
@@ -282,6 +284,11 @@ p::first-line{
 
 .imagen-diferenciales{
     width: 60%;
+    transition: 400ms;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
 }
 .video{
     width: 560px;
